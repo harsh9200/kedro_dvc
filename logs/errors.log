@@ -1,0 +1,6 @@
+2021-05-23 19:29:09,323 - kedro.pipeline.node - ERROR - Node `split: split_data([iris_data,params:example_test_data_ratio]) -> [example_test_x,example_test_y,example_train_x,example_train_y]` failed with error: 
+'DataFrame' object has no attribute 'save'
+2021-05-23 19:29:56,953 - kedro.pipeline.node - ERROR - Node `split: split_data([iris_data,params:example_test_data_ratio]) -> [example_test_x,example_test_y,example_train_x,example_train_y]` failed with error: 
+[Errno 2] No such file or directory: 'kedro-dolt-demo/data/02_intermediate/train_x.csv'
+2021-05-23 19:30:10,748 - kedro.pipeline.node - ERROR - Node `split: split_data([iris_data,params:example_test_data_ratio]) -> [example_test_x,example_test_y,example_train_x,example_train_y]` failed with error: 
+[Errno 2] No such file or directory: 'kedro-dolt-demo/data/02_intermediate/'

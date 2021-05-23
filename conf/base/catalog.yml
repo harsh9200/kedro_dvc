@@ -2,35 +2,7 @@ iris_data:
   type: pandas.CSVDataSet
   filepath: data/01_raw/iris.csv
 
-example_test_x:
-  type: pandas.SQLTableDataSet
-  table_name: example_test_x
-  credentials:
-    con: mysql+pymysql://root@localhost:3306/kedro_dolt_demo
-  save_args:
-    if_exists: replace
-
-example_test_y:
-  type: pandas.SQLTableDataSet
-  table_name: example_test_y
-  credentials: dolt_credentials
-  credentials:
-    con: mysql+pymysql://root@localhost:3306/kedro_dolt_demo
-  save_args:
-    if_exists: replace
 
 example_train_x:
-  type: pandas.SQLTableDataSet
-  table_name: example_train_x
-  credentials:
-    con: mysql+pymysql://root@localhost:3306/kedro_dolt_demo
-  save_args:
-    if_exists: replace
-
-example_train_y:
-  type: pandas.SQLTableDataSet
-  table_name: example_train_y
-  credentials:
-    con: mysql+pymysql://root@localhost:3306/kedro_dolt_demo
-  save_args:
-    if_exists: replace
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/train_x.csv
